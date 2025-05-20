@@ -25,35 +25,6 @@ async function generate() {
       } else {
         status.textContent = ' Failed to generate script.';
       }
-      
-//------------------------------------
-document.getElementById('exportGitHub').addEventListener('click', async () => {
-  const token = document.getElementById('githubToken').value.trim();
-  const repo = document.getElementById('githubRepo').value.trim();
-
-  try {
-    const res = await fetch('/export', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ token, repo, filename: 'testcafe-test.js' })
-    });
-
-    const result = await res.json();
-    if (res.ok) {
-      alert(result.message);
-    } else {
-      alert('❌ Error: ' + result.message);
-    }
-
-    console.log('Export Result:', result);
-  } catch (err) {
-    console.error('Export Error:', err);
-    alert('❌ Failed to export to GitHub. Check console for details.');
-  }
-});
-
-      
-//------------------------------------------
 
     } catch (err) {
       spinner.style.display = 'none';

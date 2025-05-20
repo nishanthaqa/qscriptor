@@ -31,18 +31,6 @@
       resize: vertical;
     }
 
-    input {
-      width: 100%;
-      max-width: 600px;
-      height: 30px;
-      padding: 15px;
-      font-size: 16px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      resize: vertical;
-    }
-
     button {
       margin-top: 20px;
       padding: 12px 24px;
@@ -111,11 +99,7 @@
       <button onclick="generate()"> Generate Script</button>
       <div id="spinner" class="spinner" style="display: none;"></div>
       <p id="status"></p>
-      <a id="downloadLink" download="testcafe-test.js"> Download Script</a><br><br><br><br>
-
-      <input type="text" id="githubToken" placeholder="GitHub Personal Access Token"><br><br>
-      <input type="text" id="githubRepo" placeholder="GitHub Repo (e.g., username/repo)">
-      <button id="exportGitHub">Export to GitHub</button>
+      <a id="downloadLink" download="testcafe-test.js"> Download Script</a>
     </div>
   
     <script src="script.js"></script>
