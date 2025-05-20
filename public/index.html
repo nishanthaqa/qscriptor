@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TestCafe Script Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f9fc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 600px;
+      height: 150px;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      resize: vertical;
+    }
+
+    input {
+      width: 100%;
+      max-width: 600px;
+      height: 30px;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #status {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    #downloadLink {
+      margin-top: 15px;
+      display: inline-block;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    #downloadLink:hover {
+      background-color: #1e7e34;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .spinner {
+  margin: 20px auto;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  </style>
+</head>
+<body>
+    <div class="container">
+      <h1>TestCafe Script Generator</h1>
+      <textarea id="scenario" placeholder="Describe your test scenario here..."></textarea><br>
+      <button onclick="generate()"> Generate Script</button>
+      <div id="spinner" class="spinner" style="display: none;"></div>
+      <p id="status"></p>
+      <a id="downloadLink" download="testcafe-test.js"> Download Script</a><br><br><br><br>
+
+      <input type="text" id="githubToken" placeholder="GitHub Personal Access Token"><br><br>
+      <input type="text" id="githubRepo" placeholder="GitHub Repo (e.g., username/repo)">
+      <button id="exportGitHub">Export to GitHub</button>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  
+</html>
+
