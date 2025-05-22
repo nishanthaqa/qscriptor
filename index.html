@@ -3,56 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quick Links</title>
+  <title>QScriptor</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       margin: 0;
-    }
-
-    h1 {
-      margin-bottom: 40px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f4f8;
       color: #333;
     }
 
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .link-button {
-      padding: 15px 25px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background-color: #4a90e2;
+    header {
+      background-color: #0066cc;
+      padding: 20px;
       color: white;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
-      text-align: center;
     }
 
-    .link-button:hover {
-      background-color: #357abd;
+    img.banner {
+      max-width: 100%;
+      height: 520px;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .button-container {
+      margin: 30px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .button-container a {
+      background-color: #007BFF;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .button-container a:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <h1>QScriptor - LLM Powered TestCafe Script Generator</h1>
+
+  <header>
+    <h1>QScriptor - AI Powered TestCafe Script Generator</h1>
+  </header>
+
+  <img src="qscriptor.jpeg" alt="Banner" class="banner">
+
   <div class="button-container">
     <a href="https://github.com/nishanthaqa/qscriptor" target="_blank" class="link-button">Project Repository</a>
     <a href="https://github.com/nishanthaqa/qscriptor/blob/master/README.md" target="_blank" class="link-button">Readme</a>
     <a href="https://github.com/nishanthaqa/qscriptor/blob/master/docs/qscriptor_pdf_C098.pdf" target="_blank" class="link-button">About Project</a>
     <a href="https://youtu.be/e9aS0vSzkDc" target="_blank" class="link-button">Demo Video</a>
   </div>
+
+  <footer>
+    
+  </footer>
+
 </body>
 </html>

@@ -1,20 +1,20 @@
-# 🧪 TestCafe Script Generator (LLM-Powered)
+#  TestCafe Script Generator (LLM-Powered)
 
 This is a simple web application that lets you **generate TestCafe test scripts** by describing a scenario in plain English. It uses a local **Mistral LLM** running via **Ollama** to produce JavaScript code and delivers it as a downloadable `.js` file.
 
 ---
 
-## ⚙️ Features
+##  Features
 
-- 💬 Describe your test case in natural language  
-- 🧠 Uses a local LLM (Mistral via Ollama)  
-- 📄 Generates valid TestCafe test scripts  
-- 💾 Download script as a `.js` file  
-- ✨ Clean web UI with status spinner  
+-  Describe your test case in natural language  
+-  Uses a local LLM (Mistral via Ollama)  
+-  Generates valid TestCafe test scripts  
+-  Download script as a `.js` file  
+-  Clean web UI with status spinner  
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 - [Node.js](https://nodejs.org/) (v18 or newer recommended)
 - [Ollama](https://ollama.com/) installed and running locally
@@ -22,7 +22,7 @@ This is a simple web application that lets you **generate TestCafe test scripts*
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone this repository
 
@@ -59,14 +59,14 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🖼 UI Overview
 
-- ✍️ Textarea to describe your test case  
-- 🚀 "Generate Script" button triggers LLM  
-- 🔄 Spinner shown while processing  
-- ⬇️ Download link appears after generation  
+-  Textarea to describe your test case  
+-  "Generate Script" button triggers LLM  
+-  Spinner shown while processing  
+- ⬇ Download link appears after generation  
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 llm-testcafe-generator/
@@ -79,7 +79,7 @@ llm-testcafe-generator/
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. You type a test scenario in the browser.
 2. The app sends a POST request to the local Ollama server (`http://localhost:11434/api/generate`).
@@ -88,7 +88,7 @@ llm-testcafe-generator/
 
 ---
 
-## 🛠 Customization Ideas
+##  Customization Ideas
 
 - Use different models (e.g., `llama3`, `codellama`)
 - Add multi-test generation
@@ -97,6 +97,6 @@ llm-testcafe-generator/
 
 ---
 
-## 📝 License
+##  License
 
 MIT – free to use, modify, and distribute.
