@@ -57,12 +57,12 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 🖼 UI Overview
+##  UI Overview
 
 -  Textarea to describe your test case  
 -  "Generate Script" button triggers LLM  
 -  Spinner shown while processing  
-- ⬇ Download link appears after generation  
+-  Download link appears after generation  
 
 ---
 
